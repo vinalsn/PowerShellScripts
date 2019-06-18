@@ -1,0 +1,2 @@
+-- Copy A to B with CSV file
+import-csv C:\ProlawExport\ProlawExport3-temp.csv | foreach {copy-item "\\Cs01corp\root\apps\Corp\LGL\980120\WALORP\$($_.Source)" -Destination "\\bnacorl01sf\prolaw_sftp_data\DataExport2\$($_.Source)" -Recurse }
